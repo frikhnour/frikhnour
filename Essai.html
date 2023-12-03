@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>American food simply so good </title>
+    <link rel="icon" href="logo.png" type="image/png"> <!-- Add your logo image source here -->
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: white;
+        }
+
+        header {
+            position: relative;
+            text-align: center;
+            color: white;
+            padding: 80px;
+            background-image: url('america.png');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header::before {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.3);
+        }
+
+        h1 {
+            font-size: 40px;
+            border: 5px solid white;
+            padding: 50px;
+            display: inline-block;
+            margin: 0 auto;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+
+        li {
+            float: right;
+        }
+
+        li a,
+        .dropbtn {
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover,
+        .dropdown:hover .dropbtn {
+            background-color: red;
+        }
+
+        li.dropdown {
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: relative;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 100;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        #presentation-projet {
+            text-align: center;
+            padding: 50px;
+            max-width: 800px;
+            margin: 20px auto;
+        }
+
+        .chef-section {
+            background-color: black;
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+
+        .recipes-section {
+            background-color: #f9f9f9;
+            padding: 20px;
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .column {
+            width: 48%;
+            margin-bottom: 20px;
+        }
+
+        .recipe {
+            cursor: pointer;
+            border: 1px solid #ddd;
+            padding: 30px;
+            border-radius: 5px;
+        }
+
+        .recipe img {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .contact-section {
+            text-align: left;
+            margin-top: 20px;
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .recipe-item {
+            width: 30%;
+            margin-bottom: 20px;
+        }
+
+        .image-title {
+            text-align: center;
+        }
+
+  footer {
+            background-color: #f0c419;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            width: 100%;
+            clear: both;
+        }
+
+        .footer-logo {
+            max-width: 150px; /* Adjust the width as needed */
+            margin-bottom: 10px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        .presentation-section {
+            text-align: justify;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+
+  
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>American <strong>food</strong> <i>simply</i> so <strong>good</strong></h1>
+    </header>
+
+    <ul>
+        <li><a href="#home"><strong>Accueil</strong></a></li>
+        <li class="dropdown">
+            <a href="#" class="dropbtn"><strong>Recettes salées</strong></a>
+            <div class="dropdown-content">
+                <a href="recette-hot-dog.html" target="_blank">Hot dog</a>
+                <a href="recette-hamburger.html" target="_blank">Hamburger</a>
+                <a href="recette-mac-cheese.html" target="_blank">Mac & Cheese</a>
+            </div>
+        </li>
+        <li class="dropdown">
+            <a href="#" class="dropbtn"><strong>Recettes sucrées</strong></a>
+            <div class="dropdown-content">
+                <a href="recette-cheesecake.html" target="_blank">Cheesecake</a>
+                <a href="recette-pancakes.html" target="_blank">Pancakes</a>
+                <a href="recette-brownies.html" target="_blank">Brownies</a>
+            </div>
+        </li>
+    </ul>
+
+    <div id="presentation-projet" class="centered-section presentation-section">
+        <h2>Bienvenue sur notre plateforme dédiée à l'art culinaire américain !</h2>
+        <p>Plongez dans l'univers savoureux des États-Unis où la diversité des saveurs et des traditions culinaires prend vie. Découvrez une collection de recettes emblématiques, des classiques réconfortants aux innovations audacieuses.</p>
+        <p>Explorez nos sections thématiques qui vous transportent à travers de nombreuses recettes par le mythique Hamburger, de plats réconfortants du sud comme le macaroni au fromage, ou des créations contemporaines, vous trouverez ici une abondance d'idées pour égayer votre table.</p>
+        <p>Que vous soyez un novice en cuisine ou un chef expérimenté en quête de nouvelles inspirations, notre site vous offre un véritable festin de saveurs authentiques et d'innovation culinaire à l'américaine.</p>
+    </div>
+
+    <div class="chef-section">
+        <h2>Rencontrez nos Chefs</h2>
+        <p>Nous sommes fiers de vous présenter nos chefs expert en cuisine américaine. Avec une passion pour les saveurs authentiques et une créativité sans fin, nos chefs sont prêt à vous guider à travers un voyage culinaire exceptionnel.</p>
+    </div>
+
+    <div class="recipes-section">
+        <!-- Recettes sucrées -->
+        <div class="column">
+            <h2>Recettes sucrées</h2>
+            <div class="recipe">
+                <p>Plongez dans un monde de délices sucrés avec nos recettes sucrées exquises. De l'onctueux cheesecake aux pancakes moelleux en passant par les irrésistibles brownies, notre sélection de desserts sucrés vous transporte dans un paradis gourmand. Chaque recette est soigneusement élaborée pour éveiller vos papilles et vous offrir une expérience sucrée inoubliable. </p>
+                <p><strong>Top 3 Recipes:</strong></p>
+                <div class="image-container">
+                    <div class="recipe-item">
+                        <a href="recette-cheesecake.html">
+                            <img src="https://www.hervecuisine.com/wp-content/uploads/2015/11/cheesecake-1024x683.jpg.webp" alt="Cheesecake Oreos" style="width: 100%;">
+                            <p class="image-title">Cheesecake Oreo</p>
+                        </a>
+                    </div>
+                    <div class="recipe-item">
+                        <a href="recette-pancakes.html">
+                            <img src="https://www.hervecuisine.com/wp-content/uploads/2011/01/recette-pancakes-facile-1024x680.jpg.webp" alt="Pancakes" style="width: 100%;">
+                            <p class="image-title">Pancakes</p>
+                        </a>
+                    </div>
+                    <div class="recipe-item">
+                        <a href="recette-brownies.html">
+                            <img src="https://assets.afcdn.com/recipe/20161114/26634_w1024h768c1cx2736cy1824.webp" alt="Brownies" style="width: 100%;">
+                            <p class="image-title">Brownies</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Recettes salées -->
+        <div class="column">
+            <h2>Recettes salées</h2>
+            <div class="recipe">
+                <p>Découvrez l'art culinaire salé américain à travers nos recettes salées savoureuses. Du classique hot-dog aux hamburgers juteux et aux macaronis au fromage réconfortants, notre collection de recettes salées célèbre la diversité des saveurs américaines. Chaque plat est une fusion de goûts authentiques et d'innovations créatives, vous invitant à explorer les délices salés de la cuisine américaine. </p>
+                <p><strong>Top 3 Recipes:</strong></p>
+                <div class="image-container">
+                    <div class="recipe-item">
+                        <a href="recette-hamburger.html">
+                            <img src="https://us.123rf.com/450wm/studioaccendo/studioaccendo2305/studioaccendo230509866/204096671-gros-cheeseburger-savoureux-avec-tomate-au-fromage-et-laitue-sur-fond-de-bois.jpg?ver=6" alt="Cheesecake Oreos" style="width: 100%;">
+                            <p class="image-title">Hamburger</p>
+                        </a>
+                    </div>
+                    <div class="recipe-item">
+                        <a href="recette-hot-dog.html">
+                            <img src="https://www.yeoldeoak.co.uk/wp-content/uploads/2020/03/CLASSIC-HOT-DOG.jpg" alt="Pancakes" style="width: 100%;">
+                            <p class="image-title">Hot dog</p>
+                        </a>
+                    </div>
+                    <div class="recipe-item">
+                        <a href="recette-mac-cheese.html">
+                            <img src="https://hips.hearstapps.com/hmg-prod/images/mac-and-cheese-index-64d25bdf03b98.jpg?crop=0.501xw:1.00xh;0.352xw,0&resize=1200:*" alt="Brownies" style="width: 100%;">
+                            <p class="image-title">Mac & Cheese</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact-section">
+        <footer>
+                        <div class="footer-logo">
+                <img src="logo.png" alt="Logo" style="max-width: 100%;">
+            </div>
+            <div class="contact-section">
+                <p>Email: american@food.com</p>
+                <p>Téléphone: 234 567 890</p>
+            </div>
+            <div>
+                <p>Copyright © 2023 American food simply so good. </p>
+                <p>Tous droits réservés.</p>
+            </div>
+        </footer>
+    </div>
+
+</body>
+</html>
